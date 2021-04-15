@@ -819,7 +819,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.11.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.5", "@babel/runtime@^7.11.0", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
   version "7.13.10"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
   integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
@@ -4479,6 +4479,13 @@ import-from@^2.1.0:
   dependencies:
     resolve-from "^3.0.0"
 
+import-html-entry@^1.9.0:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/import-html-entry/-/import-html-entry-1.11.1.tgz#3d8c5977926bdd122ab8e658965c102068b4af8d"
+  integrity sha512-O7mCUTwKdYU49/LH6nq1adWPnUlZQpKeGWIEcDq07KTcqP/v0jBLEIVc0oE0Mtlw3CEe0eeKGMyhl6LwfXCV7A==
+  dependencies:
+    "@babel/runtime" "^7.7.2"
+
 import-local@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/import-local/-/import-local-2.0.0.tgz#55070be38a5993cf18ef6db7e961f5bee5c5a09d"
@@ -6637,6 +6644,17 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qiankun@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/qiankun/-/qiankun-2.4.0.tgz#e0c847fcee1e79c167899bfcb7441a23590c5430"
+  integrity sha512-O9xfVQ1yP1tp7dL1EvK3BicD3z2NURAyF0BjxdJ9TYny40VFfWvw7H9j5ONZiihiE7owcwCpXex+FsqEU7fuew==
+  dependencies:
+    "@babel/runtime" "^7.10.5"
+    import-html-entry "^1.9.0"
+    lodash "^4.17.11"
+    single-spa "5.8.1"
+    tslib "^1.10.0"
+
 qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
@@ -7195,6 +7213,11 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+single-spa@5.8.1:
+  version "5.8.1"
+  resolved "https://registry.yarnpkg.com/single-spa/-/single-spa-5.8.1.tgz#86c2575e297e31d8f06945944ec97e31851a59ae"
+  integrity sha512-RlyLZ1IDIPdzI6mQPzCQnlgTt9jmbAXBZODmifoDut840wksPDSPhcSS8jXMpuUlqOidQiX2YuLVQSR9DEgsXw==
 
 slash@^1.0.0:
   version "1.0.0"
@@ -7815,7 +7838,7 @@ ts-pnp@^1.1.6:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
@@ -8147,6 +8170,11 @@ vue-loader@^15.9.2:
     loader-utils "^1.1.0"
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
+
+vue-router@^3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.1.tgz#edf3cf4907952d1e0583e079237220c5ff6eb6c9"
+  integrity sha512-RRQNLT8Mzr8z7eL4p7BtKvRaTSGdCbTy2+Mm5HTJvLGYSSeG9gDzNasJPP/yOYKLy+/cLG/ftrqq5fvkFwBJEw==
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"
