@@ -1,6 +1,8 @@
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
+import Vue from "vue"
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import App from "./App.vue"
+import router from "./router"
 
 // 导入qiankun内置函数
 import {
@@ -11,6 +13,7 @@ import {
 } from "qiankun";
 
 let app = null;
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false;
 
@@ -70,12 +73,12 @@ registerMicroApps(
             render,
             activeRule: genActiveRule("/aaa"),
         },
-        // {
-        //     name: "vue-bbb",
-        //     entry: "//localhost:7772",
-        //     render,
-        //     activeRule: genActiveRule("/bbb")
-        // },
+        {
+            name: "vue-bbb",
+            entry: "//localhost:7772",
+            render,
+            activeRule: genActiveRule("/bbb")
+        },
     ],
     {
         beforeLoad: [

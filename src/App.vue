@@ -1,8 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <p>tete test</p>
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <p>parent text</p>
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App" v-show="false"/> -->
     
     <!-- 父应用渲染用 -->
     <router-view></router-view>
@@ -14,12 +13,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // HelloWorld
   },
   props: {
     loading: Boolean,
@@ -48,5 +47,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  border: 1px solid blue;
 }
 </style>
