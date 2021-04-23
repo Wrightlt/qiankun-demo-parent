@@ -7,7 +7,7 @@
     <router-view></router-view>
 
     <!-- 子应用盒子 -->
-    <div id="root-view" class="app-view-box" v-html="content"></div>
+    <!-- <div id="root-view" class="app-view-box" v-html="content"></div> -->
         
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style>
-#app {
+#appTest {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,5 +48,10 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
   border: 1px solid blue;
+}
+
+.appContainer{
+  background: #ccc;
+  padding: 20px;
 }
 </style>

@@ -1,6 +1,7 @@
 <template>
     <div>
-        login page
+        this is parent Login component
+        <!-- <router-view></router-view> -->
 
     </div>
 </template>
