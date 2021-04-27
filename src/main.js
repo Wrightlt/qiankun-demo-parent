@@ -4,6 +4,7 @@ import 'element-ui/lib/theme-chalk/index.css'
 import App from "./App.vue"
 import store from "./store"
 import router from "./router"
+import actions from './qiankunConfig/globalState'
 
 // 导入qiankun内置函数
 import {
@@ -18,15 +19,15 @@ Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
-let msg = {
-    data: {
-        auth: false,
-    },
-    fns: [
-        function LOGOUT_(data) {
-            alert('父应用返回信息：' + data)
-        }]
-    }
+// let msg = {
+//     data: {
+//         auth: false,
+//     },
+//     fns: [
+//         function LOGOUT_(data) {
+//             alert('父应用返回信息：' + data)
+//         }]
+//     }
 
 new Vue({
     router,
@@ -84,14 +85,14 @@ registerMicroApps([
       entry: 'http://localhost:7771', 
       container: '#appContainer', 
       activeRule: '/portal/aaa', 
-      props: msg
+      props: actions
     },
     { 
       name: 'vue-bbb',
       entry: 'http://localhost:7772', 
       container: '#appContainer', 
       activeRule: '/portal/bbb',
-      props: msg
+      props: actions
     },
   ]);
 // registerMicroApps(
