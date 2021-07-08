@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "install:all": "npm-run-all --serial install:*",
+    "start": "npm-run-all --parallel start:*",
+    "start:child1": "cd ../qiankun-demo-child1/ && yarn serve",
+    "start:child2": "cd ../qiankun-demo-child2/ && yarn serve",
+    "start:parent": "yarn serve",
+    "install:parent": "yarn",
+    "install:child1": "cd ../qiankun-demo-child1/ && yarn",
+    "install:child2": "cd ../qiankun-demo-child2/ && yarn",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -23,6 +31,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-vue": "^6.2.2",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.32.11",
     "sass-loader": "^10.1.1",
     "vue-template-compiler": "^2.6.11"
